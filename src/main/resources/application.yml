@@ -1,0 +1,9 @@
+server:
+  port: 6061
+
+
+request:
+  xwz:
+    getCount: /xwz/getCount
+  xwz:
+    myName: james
