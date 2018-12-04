@@ -5,5 +5,4 @@ server:
 request:
   xwz:
     getCount: /xwz/getCount
-  xwz:
     myName: james

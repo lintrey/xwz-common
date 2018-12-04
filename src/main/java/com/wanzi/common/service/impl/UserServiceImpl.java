@@ -2,7 +2,6 @@ package com.wanzi.common.service.impl;
 
 import com.wanzi.common.entity.Result;
 import com.wanzi.common.entity.ResultUtil;
-import com.wanzi.common.exception.XwzServiceException;
 import com.wanzi.common.service.IAsyncService;
 import com.wanzi.common.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -59,7 +58,14 @@ public class UserServiceImpl implements IUserService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        log.error("【异步处理异常】");
-        throw new XwzServiceException(1,"异步处理异常");
+        /*log.error("【异步处理异常】");
+        throw new XwzServiceException(1,"异步处理异常");*/
+    }
+
+    public static void main(String[] args) {
+        /*UserServiceImpl userService = new UserServiceImpl();
+        userService.deal();*/
+
+        System.out.println();
     }
 }
